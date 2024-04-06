@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "What is the event loop in Node.js, and why is it important for asynchronous operations?",
+      "options": [
+        "It's a feature that ensures Node.js can handle multiple concurrent operations efficiently.",
+        "It's a mechanism for handling events and callbacks in Node.js.",
+        "It's a loop that waits for events to occur and executes callbacks accordingly.",
+        "All of the above."
+      ],
+      "answer": "All of the above."
+    },
+    {
+      "question": "What is a callback function in Node.js, and how does it facilitate asynchronous programming?",
+      "options": [
+        "A function passed as an argument to another function, which will be invoked at a later time.",
+        "It helps in handling I/O operations and other asynchronous tasks by executing code when the task is complete.",
+        "Both of the above.",
+        "None of the above."
+      ],
+      "answer": "Both of the above."
+    },
+    {
+      "question": "Explain the concept of non-blocking I/O in Node.js. How does it differ from traditional blocking I/O?",
+      "options": [
+        "Non-blocking I/O allows the execution of other code while waiting for I/O operations to complete.",
+        "Traditional blocking I/O halts the program until the I/O operation finishes.",
+        "Non-blocking I/O uses asynchronous operations to avoid waiting for I/O tasks to complete.",
+        "All of the above."
+      ],
+      "answer": "All of the above."
+    },
+    {
+      "question": "What is the purpose of the `require()` function in Node.js? Provide an example of how it is used to import modules.",
+      "options": [
+        "To include external modules or files in Node.js applications.",
+        "To define a module in Node.js.",
+        "To execute a function asynchronously in Node.js.",
+        "None of the above."
+      ],
+      "answer": "To include external modules or files in Node.js applications."
+    },
+    {
+      "question": "How does Node.js handle modules? Describe the difference between CommonJS and ES Modules (ESM) in Node.js.",
+      "options": [
+        "Node.js uses CommonJS modules by default but can also support ES Modules (ESM) with the 'import' and 'export' keywords.",
+        "CommonJS modules are loaded synchronously while ES Modules (ESM) are loaded asynchronously.",
+        "ES Modules (ESM) are the standard for modular JavaScript code in modern web browsers.",
+        "None of the above."
+      ],
+      "answer": "Node.js uses CommonJS modules by default but can also support ES Modules (ESM) with the 'import' and 'export' keywords."
+    },
+    {
+      "question": "What is the role of the `exports` object in Node.js modules? How is it different from the `module.exports` object?",
+      "options": [
+        "`exports` is an alias for `module.exports` and can be used interchangeably.",
+        "`exports` is used to export multiple values from a module while `module.exports` is used to export a single value.",
+        "`exports` cannot be reassigned, while `module.exports` can be reassigned to a new object or value.",
+        "All of the above."
+      ],
+      "answer": "`exports` is an alias for `module.exports` and can be used interchangeably."
+    },
+    {
+      "question": "Explain the difference between `process.nextTick()` and `setImmediate()` in Node.js. When would you use each one?",
+      "options": [
+        "`process.nextTick()` executes the callback function immediately after the current event loop iteration, while `setImmediate()` executes the callback function in the next iteration of the event loop.",
+        "`setImmediate()` has higher priority than `process.nextTick()` in the event loop.",
+        "Both `process.nextTick()` and `setImmediate()` are used to defer the execution of a function until the next iteration of the event loop, but `process.nextTick()` has higher priority.",
+        "None of the above."
+      ],
+      "answer": "`process.nextTick()` executes the callback function immediately after the current event loop iteration, while `setImmediate()` executes the callback function in the next iteration of the event loop."
+    },
+    {
+      "question": "How can you handle errors in Node.js asynchronous code? Discuss the usage of `try/catch` with asynchronous functions.",
+      "options": [
+        "You can use `try/catch` blocks to handle synchronous errors, but for asynchronous code, you should use error-first callbacks or promise rejections.",
+        "`try/catch` blocks work seamlessly with asynchronous functions in Node.js.",
+        "Both `try/catch` blocks and error-first callbacks are equally effective for handling errors in asynchronous code.",
+        "None of the above."
+      ],
+      "answer": "You can use `try/catch` blocks to handle synchronous errors, but for asynchronous code, you should use error-first callbacks or promise rejections."
+    },
+    {
+      "question": "What is middleware in the context of Express.js? Provide an example of how middleware functions are used in an Express.js application.",
+      "options": [
+        "Middleware functions are functions that have access to the request, response, and next middleware function in the application's request-response cycle.",
+        "Middleware functions can modify the request and response objects, execute any code, end the request-response cycle, or call the next middleware function in the stack.",
+        "Middleware functions can be used to perform tasks such as logging, authentication, error handling, etc.",
+        "All of the above."
+      ],
+      "answer": "All of the above."
+    },
+    {
+      "question": "Describe the purpose of the `Buffer` class in Node.js. When and why would you use buffers in your code?",
+      "options": [
+        "`Buffer` class is used to handle binary data in Node.js, such as reading from or writing to streams, dealing with network protocols, or working with file system operations.",
+        "`Buffer` objects can be used to represent fixed-size chunks of memory, which can be used for efficient manipulation of binary data.",
+        "Buffers are particularly useful when dealing with I/O operations, cryptography, and data compression.",
+        "All of the above."
+      ],
+      "answer": "All of the above."
+    }
+  ]
+}
